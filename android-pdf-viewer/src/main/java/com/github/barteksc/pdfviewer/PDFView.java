@@ -807,7 +807,7 @@ public class PDFView extends RelativeLayout {
             // Check Y offset
             float contentHeight = pdfFile.getDocLen(zoom);
             if (contentHeight < getHeight()) { // whole document height visible on screen
-                offsetY = (getHeight() - contentHeight) / 2;
+                offsetY = 0; // (getHeight() - contentHeight) / 2;
             } else {
                 if (offsetY > 0) { // top visible
                     offsetY = 0;
